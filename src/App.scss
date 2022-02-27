@@ -13,17 +13,27 @@
 }
 
 .wordleContainer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: lightskyblue;
+    margin: 0 auto;
+    width: 70vw;
     td {
+        margin: 0 auto;
+        // width: 50vw;
         padding: 10px;
         border: 1px solid black;
     }
 }
 
-
+.board-wrapper, .letterlist-wrapper { width: 50%; } 
 
 .letterlist-wrapper {
+    align-content: center;
+    justify-content: center;
     span {
+        height: max-content;
         padding: 4px;
         border: 1px solid black;
     }
