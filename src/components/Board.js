@@ -1,8 +1,9 @@
 import '../App.scss';
 
-function Board() {
+function Board({ guesses }) {
   return (
     <div className="board-wrapper">
+        {guesses}
     </div>
   );
 }

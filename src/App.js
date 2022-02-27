@@ -26,7 +26,6 @@ function App() {
   // TODO: get guess from guess container, pass to wordlecontainer
   return (
     <div className="App">
-      {guess}
       <Guess assignGuess={assignGuess} />
       <WordleContainer allGuesses={allGuesses} />
     </div>

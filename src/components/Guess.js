@@ -19,7 +19,7 @@ function Guess({ assignGuess }) {
         <form onSubmit={handleSubmit}>
             <div className="form-control">
                 <label>Guess</label>
-                <input maxLength="5" minLength="5" type='text' onChange={e => handleChange(e.target.value)} placeholder="Enter your budget" />
+                <input maxLength="5" minLength="5" type='text' onChange={e => handleChange(e.target.value)} placeholder="Enter your guess" />
                 <input type="submit" value="Guess" />
             </div>
         </form>

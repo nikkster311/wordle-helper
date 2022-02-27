@@ -1,0 +1,30 @@
+.App {
+    background-color: green;
+}
+
+.yes { background: green; }
+
+.maybe { background: yellow; }
+
+.no { background: grey; }
+
+.guess-wrapper {
+    background-color: greenyellow;
+}
+
+.wordleContainer-wrapper {
+    background-color: lightskyblue;
+    td {
+        padding: 10px;
+        border: 1px solid black;
+    }
+}
+
+
+
+.letterlist-wrapper {
+    span {
+        padding: 4px;
+        border: 1px solid black;
+    }
+}
