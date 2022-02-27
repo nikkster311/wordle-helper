@@ -1,4 +1,4 @@
-import { isCompositeComponent } from 'react-dom/test-utils';
+// import { isCompositeComponent } from 'react-dom/test-utils';
 import '../App.css';
 
 function Guess({ assignGuess }) {

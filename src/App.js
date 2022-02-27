@@ -6,22 +6,29 @@ import React, { useState } from 'react';
 function App() {
 
   const [guess, setGuess] = useState([])
+  const [allGuesses, setAllGuesses] = useState([])
+
+  // const addGuess = (guessArray) => setAllGuesses(state => [...state, guessArray])
 
   // set guess state as array to word from Guess component
   function assignGuess(newguess) {
-    let guessArray = []
+    var guessArray = new Array();
     for (var i = 0; i < newguess.length; i++) {
       guessArray.push(newguess[i])
     }
     setGuess(guessArray)
+    // addGuess(guessArray)
+    setAllGuesses(state => [...state, guessArray])
+    console.log(allGuesses)
   }
+
 
   // TODO: get guess from guess container, pass to wordlecontainer
   return (
     <div className="App">
       {guess}
       <Guess assignGuess={assignGuess} />
-      <WordleContainer newGuess={guess} />
+      <WordleContainer allGuesses={allGuesses} />
     </div>
   );
 }
