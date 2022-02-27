@@ -1,4 +1,4 @@
-import '../App.css';
+import '../App.scss';
 import React, { useReducer, useState } from 'react';
 import Board from "./Board";
 import LetterList from "./LetterList";
@@ -38,7 +38,7 @@ function WordleContainer({ allGuesses }) {
     )
 
   return (
-    <div className="App">
+    <div className="wordleContainer-wrapper">
         {/* <div>this is the fill array {fullArray[5]}</div> */}
         <div>{allGuesses}</div>
         <div>{mappedGuesses}</div>

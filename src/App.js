@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import WordleContainer from './components/WordleContainer';
 import Guess from './components/Guess';
 import React, { useState } from 'react';

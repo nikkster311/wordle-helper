@@ -1,5 +1,5 @@
 // import { isCompositeComponent } from 'react-dom/test-utils';
-import '../App.css';
+import '../App.scss';
 
 function Guess({ assignGuess }) {
 
