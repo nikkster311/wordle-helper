@@ -8,6 +8,8 @@
 
 .no { background: grey; }
 
+.unused { background: lightgrey;}
+
 .guess-wrapper {
     background-color: greenyellow;
 }
@@ -36,5 +38,25 @@
         height: max-content;
         padding: 4px;
         border: 1px solid black;
+    }
+}
+
+.options-wrapper {
+    display: grid;
+    width: 40vw;
+    margin: 0 auto;
+    text-align: center;
+    column-gap: 4px;
+    grid-template-columns: repeat(5, 1fr);
+    div {
+        display: grid;
+        .no {
+            text-decoration: line-through;
+        }
+    }
+    .finalLetter {
+        height: 20px;
+        border-bottom: 1px solid black;
+        background: burlywood;
     }
 }

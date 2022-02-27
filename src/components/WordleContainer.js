@@ -8,12 +8,12 @@ import Options from "./Options";
 function WordleContainer({ allGuesses }) {
 
     // these arrays are lists of possible correct letters for each position
-    const [alphabet, setAlphabet] = useState({"a": "no", "b": "no", "c": "no", "d": "no", "e": "no", "f": "no", "g": "no", "h": "no", "i": "no", "j": "no", "k": "no", "l": "no", "m": "no", "n": "no", "o": "no", "p": "no", "q": "no", "r": "no", "s": "no", "t": "no", "u": "no", "v": "no", "w": "no", "x": "no", "y": "no", "z": "no"})
-    const [pos1, setPos1] = useState({"a": "no", "b": "no", "c": "no", "d": "no", "e": "no", "f": "no", "g": "no", "h": "no", "i": "no", "j": "no", "k": "no", "l": "no", "m": "no", "n": "no", "o": "no", "p": "no", "q": "no", "r": "no", "s": "no", "t": "no", "u": "no", "v": "no", "w": "no", "x": "no", "y": "no", "z": "no"})
-    const [pos2, setPos2] = useState({"a": "no", "b": "no", "c": "no", "d": "no", "e": "no", "f": "no", "g": "no", "h": "no", "i": "no", "j": "no", "k": "no", "l": "no", "m": "no", "n": "no", "o": "no", "p": "no", "q": "no", "r": "no", "s": "no", "t": "no", "u": "no", "v": "no", "w": "no", "x": "no", "y": "no", "z": "no"})
-    const [pos3, setPos3] = useState({"a": "no", "b": "no", "c": "no", "d": "no", "e": "no", "f": "no", "g": "no", "h": "no", "i": "no", "j": "no", "k": "no", "l": "no", "m": "no", "n": "no", "o": "no", "p": "no", "q": "no", "r": "no", "s": "no", "t": "no", "u": "no", "v": "no", "w": "no", "x": "no", "y": "no", "z": "no"})
-    const [pos4, setPos4] = useState({"a": "no", "b": "no", "c": "no", "d": "no", "e": "no", "f": "no", "g": "no", "h": "no", "i": "no", "j": "no", "k": "no", "l": "no", "m": "no", "n": "no", "o": "no", "p": "no", "q": "no", "r": "no", "s": "no", "t": "no", "u": "no", "v": "no", "w": "no", "x": "no", "y": "no", "z": "no"})
-    const [pos5, setPos5] = useState({"a": "no", "b": "no", "c": "no", "d": "no", "e": "no", "f": "no", "g": "no", "h": "no", "i": "no", "j": "no", "k": "no", "l": "no", "m": "no", "n": "no", "o": "no", "p": "no", "q": "no", "r": "no", "s": "no", "t": "no", "u": "no", "v": "no", "w": "no", "x": "no", "y": "no", "z": "no"})
+    const [alphabet, setAlphabet] = useState({"a": "unused", "b": "unused", "c": "unused", "d": "unused", "e": "unused", "f": "unused", "g": "unused", "h": "unused", "i": "unused", "j": "unused", "k": "unused", "l": "unused", "m": "unused", "n": "unused", "o": "unused", "p": "unused", "q": "unused", "r": "unused", "s": "unused", "t": "unused", "u": "unused", "v": "unused", "w": "unused", "x": "unused", "y": "unused", "z": "unused"})
+    const [pos1, setPos1] = useState({"a": "unused", "b": "unused", "c": "unused", "d": "unused", "e": "unused", "f": "unused", "g": "unused", "h": "unused", "i": "unused", "j": "unused", "k": "unused", "l": "unused", "m": "unused", "n": "unused", "o": "unused", "p": "unused", "q": "unused", "r": "unused", "s": "unused", "t": "unused", "u": "unused", "v": "unused", "w": "unused", "x": "unused", "y": "unused", "z": "unused"})
+    const [pos2, setPos2] = useState({"a": "unused", "b": "unused", "c": "unused", "d": "unused", "e": "unused", "f": "unused", "g": "unused", "h": "unused", "i": "unused", "j": "unused", "k": "unused", "l": "unused", "m": "unused", "n": "unused", "o": "unused", "p": "unused", "q": "unused", "r": "unused", "s": "unused", "t": "unused", "u": "unused", "v": "unused", "w": "unused", "x": "unused", "y": "unused", "z": "unused"})
+    const [pos3, setPos3] = useState({"a": "unused", "b": "unused", "c": "unused", "d": "unused", "e": "unused", "f": "unused", "g": "unused", "h": "unused", "i": "unused", "j": "unused", "k": "unused", "l": "unused", "m": "unused", "n": "unused", "o": "unused", "p": "unused", "q": "unused", "r": "unused", "s": "unused", "t": "unused", "u": "unused", "v": "unused", "w": "unused", "x": "unused", "y": "unused", "z": "unused"})
+    const [pos4, setPos4] = useState({"a": "unused", "b": "unused", "c": "unused", "d": "unused", "e": "unused", "f": "unused", "g": "unused", "h": "unused", "i": "unused", "j": "unused", "k": "unused", "l": "unused", "m": "unused", "n": "unused", "o": "unused", "p": "unused", "q": "unused", "r": "unused", "s": "unused", "t": "unused", "u": "unused", "v": "unused", "w": "unused", "x": "unused", "y": "unused", "z": "unused"})
+    const [pos5, setPos5] = useState({"a": "unused", "b": "unused", "c": "unused", "d": "unused", "e": "unused", "f": "unused", "g": "unused", "h": "unused", "i": "unused", "j": "unused", "k": "unused", "l": "unused", "m": "unused", "n": "unused", "o": "unused", "p": "unused", "q": "unused", "r": "unused", "s": "unused", "t": "unused", "u": "unused", "v": "unused", "w": "unused", "x": "unused", "y": "unused", "z": "unused"})
 
     // console.log(alphabet)
     const changePos = (letter, pos, update) => {
@@ -30,8 +30,11 @@ function WordleContainer({ allGuesses }) {
         } else if (pos[letter] === 'yes') {
             pos[letter] = "no"
             if (alphabet[letter] !== "yes" || alphabet[letter] !== "maybe") {
-                alphabet[letter] = "no"
+                alphabet[letter] = "unused"
             }
+        } else if (pos[letter] === 'unused') {
+            pos[letter] = "no"
+            alphabet[letter] = "no"
         }
         update({...pos})
         console.log("updated")
@@ -57,7 +60,7 @@ function WordleContainer({ allGuesses }) {
     <div className="wordleContainer-wrapper">
         <Board guesses={mappedGuesses}/>
         <LetterList abc={alphabet} />
-        <Options />
+        <Options pos1={pos1} pos2={pos2} pos3={pos3} pos4={pos4} pos5={pos5} />
     </div>
   );
 }
